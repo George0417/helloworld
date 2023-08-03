@@ -13,4 +13,4 @@ chart_data=pd.DataFrame(
   columns=['a','b','c']
 )
 
-st.lin_chart(chart_data)
+st.line_chart(chart_data)
