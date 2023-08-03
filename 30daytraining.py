@@ -5,7 +5,7 @@ from datetime import time, datetime
 st.header('Hi George')
 st.write('It is a good day today :sunglasses:')
 
-
+@st.cache
 st.header('DAY 8 st.slider')
 st.subheader('slider')
 
