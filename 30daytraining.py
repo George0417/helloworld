@@ -5,7 +5,6 @@ from datetime import time, datetime
 st.header('Hi George')
 st.write('It is a good day today :sunglasses:')
 
-@st.cache
 st.header('DAY 8 st.slider')
 st.subheader('slider')
 
@@ -34,19 +33,3 @@ start_time = st.slider(
 st.write("Start time:", start_time)
 
 
-
-st.header('DAY 9 st.line_chart')
-
-chart_data = pd.DataFrame(
-     np.random.randn(20, 3),
-     columns=['a', 'b', 'c'])
-
-st.line_chart(chart_data)
-
-
-st.header('DAY 10 st.selectbox')
-option = st.selectbox(
-     'What is your favorite color?',
-     ('Blue', 'Red', 'Green'))
-
-st.write('Your favorite color is ', option)
