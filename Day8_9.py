@@ -4,9 +4,9 @@ import numpy as np
 
 st.header('HI george')
 st.write('Have a good day! :sunglasses:')
-@st.cache
 
-st.header('DAY 9 st.line_chart')
+
+st.subheader('DAY 9 st.line_chart')
 
 chart_data=pd.DataFrame(
   np.random.randn(20,3),
