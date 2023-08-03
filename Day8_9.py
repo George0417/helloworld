@@ -18,7 +18,7 @@ st.line_chart(chart_data)
 
 st.subheader('DAY 10 st.selectbox')
 option=st.selectbox(
-  'how many kids do you have?'
+  'how many kids do you have?',
   ('1','2','3','4')
 )
 
