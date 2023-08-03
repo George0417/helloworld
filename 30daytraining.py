@@ -1,12 +1,14 @@
 
 import streamlit as st
 from datetime import time, datetime
+import pandas as pd
+import numpy as np
+
 
 st.header('Hi George')
 st.write('It is a good day today :sunglasses:')
 
-st.header('DAY 8 st.slider')
-st.subheader('slider')
+st.subheader('DAY 8 st.slider')
 
 st.markdown('#Example1')
 age=st.slider('How old are you', 0, 100, 5)
@@ -33,3 +35,20 @@ start_time = st.slider(
 st.write("Start time:", start_time)
 
 
+st.subheader('DAY 9 st.line_chart')
+
+chart_data=pd.DataFrame(
+  np.random.randn(20,3),
+  columns=['a','b','c']
+)
+
+st.line_chart(chart_data)
+
+
+st.subheader('DAY 10 st.selectbox')
+option=st.selectbox(
+  'how many kids do you have?',
+  ('1','2','3','4')
+)
+
+st.write('your kids number is ', option)
