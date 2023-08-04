@@ -51,4 +51,8 @@ option=st.selectbox(
   ('1','2','3','4')
 )
 
+
+st.subheader('Day11 st.multiselect')
+options=st.multiselect('what is your faviote color',['blue','green'],['yellow','red'])
+st.write('You selected:', options)
 st.write('your kids number is ', option)
