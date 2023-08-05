@@ -19,3 +19,20 @@ options = st.multiselect(
 
 st.write('You selected:', options)
 
+
+st.subheader('Day12 st.checkbox')
+st.write('what would you like to order?')
+
+icecream=st.checkbox('ICE CREAM')
+coffee=st.checkbox('coffee')
+cola=st.checkbox('cola')
+
+if icecream:
+  st.write("Great! Here's some more 🍦")
+
+if coffee:
+  st.wirte("Okay, here's some coffee ☕")
+
+if cola:
+  st.write("Here you go 🥤")
+
