@@ -2,6 +2,8 @@ import streamlit as st
 from datetime import time, datetime
 import pandas as pd
 import numpy as np
+from streamlit_pandas_profiling import st_profile_report
+
 
 
 st.subheader('DAY 10 st.selectbox')
@@ -31,8 +33,14 @@ if icecream:
   st.write("Great! Here's some more 🍦")
 
 if coffee:
-  st.wirte("Okay, here's some coffee ☕")
+  st.write("Okay, here's some coffee ☕")
 
 if cola:
   st.write("Here you go 🥤")
 
+
+st.subheader('Day14 component')
+df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
+
+pr = df.profile_report()
+st_profile_report(pr)
