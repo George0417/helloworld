@@ -13,9 +13,9 @@ st.write('your kids number is ', option)
 
 
 st.subheader('Day11 st.multiselect')
-options=st.multiselect(
+options = st.multiselect(
   'what is your faviote color',
-  ['blue','green'],
+  ['Green', 'green', 'Blue'],
   ['yellow','red'])
 st.write('You selected:', options)
 
